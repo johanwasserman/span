@@ -42,6 +42,15 @@ The Python implementation focuses on developing the algorithm to parse match res
 - The sorting algorithm used (`sorted()`) is optimised for large datasets, handling the entire list of teams in O(n log n) time.
 - For this problem, the data structure needed is straightforward—just team names mapped to their scores. A `dict` is more efficient and direct for this purpose.  
 
+### Running
+
+- Ensure Python is installed
+- From the root, change directory to the python folder
+
+```bash
+cd python
+```
+
 ### Running the Tests
 ```bash
 python test_league_ranking.py
@@ -60,15 +69,6 @@ test_update_standings_draw (__main__.TestLeagueRanking.test_update_standings_dra
 Test updating standings for a match where the game is a draw. ... ok
 test_update_standings_win (__main__.TestLeagueRanking.test_update_standings_win)
 Test updating standings for a match where one team wins. ... ok
-```
-
-### Running
-
-- Ensure Python is installed
-- From the root, change directory to the python folder
-
-```bash
-cd python
 ```
 
 #### Running the Code
