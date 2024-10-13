@@ -1,0 +1,9 @@
+# Scala compile directories
+target/
+project/
+
+# Scala compiled classes
+*.class
+
+# Python cache directories
+__pycache__/
