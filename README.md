@@ -44,7 +44,7 @@ The Python implementation focuses on developing the algorithm to parse match res
 
 ### Running the Tests
 ```bash
-python -m unittest ../test_league_ranking.py
+python test_league_ranking.py
 ```
 
 **_Output_**
