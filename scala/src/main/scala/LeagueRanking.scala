@@ -44,22 +44,22 @@ object LeagueRanking {
     standings.toList.sortBy { case (team, points) => (-points, team) }
   }
 
-def formatStandings(sortedStandings: List[(String, Int)]): String = {
-    var output = List[String]()
-    var rank = 1
-    var prevPoints: Option[Int] = None
-
-    for ((team, points) <- sortedStandings) {
-        if (!prevPoints.contains(points)) {
-            rank = output.length + 1 // Update rank based on the current output length
-        }
-        prevPoints = Some(points)
-
-        // Properly format the output string
-        output = output :+ s"$rank. $team, $points pt${if (points != 1) "s" else ""}"
-    }
-    output.mkString("\n")
-}
+  def formatStandings(sortedStandings: List[(String, Int)]): String = {
+      var output = List[String]()
+      var rank = 1
+      var prevPoints: Option[Int] = None
+  
+      for ((team, points) <- sortedStandings) {
+          if (!prevPoints.contains(points)) {
+              rank = output.length + 1 // Update rank based on the current output length
+          }
+          prevPoints = Some(points)
+  
+          // Properly format the output string
+          output = output :+ s"$rank. $team, $points pt${if (points != 1) "s" else ""}"
+      }
+      output.mkString("\n")
+  }
 
 
   def main(args: Array[String]): Unit = {
